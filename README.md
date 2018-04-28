@@ -1,10 +1,10 @@
 # Third Year Group Thesis
 
-<h2>Group was</h2>
+<h2>Group Consisited of :</h2>
 <li>Ken Kilmartin</li>
 <li>Andrew Sherlock</li>
 <li>Catharine Phoenix</li>
-
+<br>
 The GitHub Pages Can be Viewed : https://kenkilmartin.github.io/Third-Year-Thesis/
 
 <h2>Instalation Instructions </h2>
