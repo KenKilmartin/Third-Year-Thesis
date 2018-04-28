@@ -1,13 +1,13 @@
 # Third Year Group Thesis
 
-##Group was
-Ken Kilmartin
-Andrew Sherlock
-Catharine Phoenix
+<h2>Group was</h2>
+<li>Ken Kilmartin</li>
+<li>Andrew Sherlock</li>
+<li>Catharine Phoenix</li>
 
 The GitHub Pages Can be Viewed : https://kenkilmartin.github.io/Third-Year-Thesis/
 
-##Instalation Instructions 
+<h2>Instalation Instructions </h2>
 
 This application is supported from devices that are from api 23 – present.
 To install the app, navigate to where ever you put in on your device. Once you tap the apk file. It should start the install.
