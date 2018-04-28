@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.Forum"
+    android:background="@drawable/forum_background_img">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_below="@id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:orientation="vertical"
+            android:id="@+id/forum_banner">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Forum"
+                android:textSize="30sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forum_banner"
+            android:id="@+id/section_list"
+            android:orientation="vertical"
+            ></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/forum_button_bar"
+            android:layout_below="@id/forum_banner"
+            >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:id="@+id/forum_menu_grid"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc0011cc"
+                    android:orientation="vertical"
+                    android:id="@+id/forum_modules"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:id="@+id/modules"
+                        android:src="@drawable/module"
+                        android:padding="10sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/modules">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Module"
+                            android:fontFamily="@font/cuprumbold"
+                            android:textAppearance="@style/cuprum_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#ccbc0315"
+                    android:orientation="vertical"
+                    android:id="@+id/forum_campus"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:id="@+id/forum"
+                        android:src="@drawable/campus"
+                        android:padding="10sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/forum">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Campus"
+                            android:fontFamily="@font/cuprumbold"
+                            android:textAppearance="@style/cuprum_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc21bc03"
+                    android:orientation="vertical"
+                    android:id="@+id/forum_area"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:id="@+id/area"
+                        android:src="@drawable/area"
+                        android:padding="10sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/area">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Area"
+                            android:fontFamily="@font/cuprumbold"
+                            android:textAppearance="@style/cuprum_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc03bca9"
+                    android:orientation="vertical"
+                    android:id="@+id/forum_transport"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:id="@+id/transport_image"
+                        android:src="@drawable/transport_f"
+                        android:padding="10sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/transport_image">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transport"
+                            android:fontFamily="@font/cuprumbold"
+                            android:textAppearance="@style/cuprum_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#ccbc5a03"
+                    android:orientation="vertical"
+                    android:id="@+id/forum_group"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:id="@+id/group"
+                        android:src="@drawable/group"
+                        android:padding="10sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/group">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Group"
+                            android:fontFamily="@font/cuprumbold"
+                            android:textAppearance="@style/cuprum_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="15sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc600057"
+                    android:orientation="vertical"
+                    android:id="@+id/forum_relax"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70sp"
+                        android:id="@+id/relax"
+                        android:src="@drawable/relax"
+                        android:padding="10sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relax">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Relax"
+                            android:fontFamily="@font/cuprumbold"
+                            android:textAppearance="@style/cuprum_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/forum_button_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

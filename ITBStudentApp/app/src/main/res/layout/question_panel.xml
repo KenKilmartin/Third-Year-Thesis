@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/question_panel"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/forum_panels"
+    android:backgroundTint="#330000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:fontFamily="@font/cuprum"
+        android:textAppearance="@style/cuprum_reg"
+        android:text="Select the correct answers"
+        android:textColor="#fff"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:id="@+id/answer_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:layout_gravity="right"
+        android:src="@drawable/tick"
+        android:layout_margin="10sp"
+        android:id="@+id/res_image"
+        />
+
+</LinearLayout>

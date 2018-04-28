@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/forum_strokes" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cuprum"
+        android:textAppearance="@style/cuprum_reg"
+        android:text="BN104"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="22dp"
+        android:id="@+id/course_title"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/forum_strokes" />
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.ProfileSettings"
+    android:background="@drawable/forum_background_img">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:layout_marginBottom="10sp"
+        android:id="@+id/profile_title">
+
+        <TextView
+            android:layout_margin="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make New Quiz"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_margin="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_title"
+        android:layout_above="@id/home_button_panel"
+        android:background="@drawable/forum_background"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/cuprum"
+                android:textAppearance="@style/cuprum_reg"
+                android:hint="Enter quiz title"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:id="@+id/quiz_title"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10sp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_weight=".5"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/cuprumbold"
+                        android:textAppearance="@style/cuprum_bold"
+                        android:background="@drawable/forum_buttons"
+                        android:text="Save Changes"
+                        android:textAlignment="center"
+                        android:textColor="#ffff"
+                        android:id="@+id/quiz_save"
+                        android:layout_margin="5sp"
+                        />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_weight=".5"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/cuprumbold"
+                        android:textAppearance="@style/cuprum_bold"
+                        android:background="@drawable/forum_buttons"
+                        android:text="Add Question"
+                        android:textAlignment="center"
+                        android:textColor="#ffff"
+                        android:id="@+id/addQuestion"
+                        android:layout_margin="5sp"
+                        />
+
+                </LinearLayout>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/question_section">
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/home_button_panel"
+        android:layout_alignParentBottom="true"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:background="@drawable/forum_buttons"
+            android:text="Back to home"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:id="@+id/profile_back_home"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

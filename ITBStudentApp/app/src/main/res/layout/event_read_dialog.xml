@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/itb_above1"
+    >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#cc000000">
+
+        <TextView
+            android:id="@+id/event_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:gravity="center_vertical"
+            android:text="Event"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#33000000"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:backgroundTint="#fff"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:text=""
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="30sp"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:layout_margin="20sp"
+                android:id="@+id/event_image"
+                android:src="@drawable/placeholder_image"/>
+
+            <TextView
+                android:id="@+id/event_till"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:backgroundTint="#fff"
+                android:fontFamily="@font/cuprum"
+                android:textAppearance="@style/cuprum_reg"
+                android:paddingLeft="10sp"
+                android:text="Valid till : "
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="25sp"
+                android:textAlignment="textEnd"/>
+
+
+            <TextView
+                android:id="@+id/event_dialog_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:backgroundTint="#fff"
+                android:fontFamily="@font/cuprum"
+                android:textAppearance="@style/cuprum_reg"
+                android:paddingLeft="10sp"
+                android:text="Enter date valid till"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/event_diss"
+                android:layout_width="200sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20sp"
+                android:layout_weight=".5"
+                android:background="@drawable/forum_buttons"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:gravity="center_vertical"
+                android:text="Dismiss"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

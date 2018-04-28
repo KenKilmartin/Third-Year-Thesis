@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_gravity="center"
+    android:background="@drawable/forum_panels"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_post_title"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Post"
+            android:textColor="#000"
+            android:textSize="28sp"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/new_post_text_panel"
+           android:layout_above="@id/new_post_bottom_panel"
+           android:layout_below="@id/new_post_title"
+           >
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/new_post_text_box"
+               android:backgroundTint="@android:color/transparent"
+               android:hint="Enter your post"
+               android:layout_margin="5sp"
+               android:fontFamily="@font/cuprumbold"
+               android:textAppearance="@style/cuprum_bold"
+               android:textColor="#000"
+               android:textColorHint="#000"
+               />
+       </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/new_post_bottom_panel"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="5sp"
+                android:layout_width="70sp"
+                android:layout_height="60sp"
+                android:src="@drawable/placeholder_image"
+                android:id="@+id/new_post_image"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60sp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="54sp"
+                    android:text="test"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="26sp"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:id="@+id/new_post_image_link"
+                    android:textColor="#000"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_margin="10sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="Post"
+                android:id="@+id/new_post_post"
+                android:textColor="#fff"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:background="@drawable/forum_buttons"
+                />
+
+            <TextView
+                android:layout_margin="10sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="Add image"
+                android:id="@+id/new_post_image_upload"
+                android:textColor="#fff"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:background="@drawable/forum_buttons"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.QuizSystem.QuizHome"
+    android:background="@drawable/forum_background_img">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_below="@id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:orientation="vertical"
+            android:id="@+id/Quiz_header">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Quiz"
+                android:textSize="30sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Quiz_header"
+            android:orientation="vertical"
+            android:layout_above="@id/quiz_button_panel"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quiz_questions"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quiz name"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/cuprumbold"
+                        android:textAppearance="@style/cuprum_bold"
+                        android:textSize="25sp"
+                        android:textColor="#fff"
+                        android:id="@+id/quiz_title"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0sp"
+                        android:text="Result : 80%"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/cuprumbold"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        android:id="@+id/quiz_result"
+                        />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/quiz_button_panel"
+            android:layout_alignParentBottom="true"
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:background="@drawable/forum_buttons"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:id="@+id/quiz_submit"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:background="@drawable/forum_buttons"
+                android:text="Back to home"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:id="@+id/quiz_home"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

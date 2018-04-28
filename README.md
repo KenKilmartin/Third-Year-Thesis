@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+# Third Year Group Thesis
 
-You can use the [editor on GitHub](https://github.com/KenKilmartin/Third-Year-Thesis-/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+##Group was
+Ken Kilmartin
+Andrew Sherlock
+Catharine Phoenix
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The GitHub Pages Can be Viewed : https://kenkilmartin.github.io/Third-Year-Thesis/
 
-### Markdown
+##Instalation Instructions 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KenKilmartin/Third-Year-Thesis-/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This application is supported from devices that are from api 23 – present.
+To install the app, navigate to where ever you put in on your device. Once you tap the apk file. It should start the install.
+If your device is not set to allow 3rd party apps, you will be asked to set this at the time. A screen similar to this should be shown. It may vary from device to device. (Screenshots are from a Samsung galaxy S6).

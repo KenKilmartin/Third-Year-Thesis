@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "947171730228",
+    "firebase_url": "https://itb-student-app-6727d.firebaseio.com",
+    "project_id": "itb-student-app-6727d",
+    "storage_bucket": "itb-student-app-6727d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947171730228:android:3d9ddd90929d7210",
+        "android_client_info": {
+          "package_name": "com.itbstudentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947171730228-4bgb78eags8iqea5tu6pflheukqsjc5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9mqThE6rggW05s69Zb2p82oiIxlnonZg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.itbstudentapp.NoteMain"
+    tools:showIn="@layout/note_main"
+    android:orientation="vertical"
+    android:background="@drawable/itb_above1"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10sp"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/empty_notes_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-320sp"
+        android:fontFamily="@font/cuprumregular"
+        android:textAppearance="@style/cuprum_reg"
+        android:text="No notes found!"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:elevation="1sp"/>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.ProfileSettings"
+    android:background="@drawable/sports_building">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar"></include>
+
+
+
+    <RelativeLayout
+        android:layout_margin="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/tool_bar"
+        android:background="@drawable/forum_background"
+        android:elevation="0dp">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Events Panel"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:textSize="28sp"
+            android:textColor="#000"
+            android:id="@+id/title"
+            android:textAlignment="center"
+            />
+
+        <View
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000"
+            android:layout_marginTop="10sp"
+            android:id="@+id/bar"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="280sp"
+            android:layout_below="@id/bar"
+            android:id="@+id/events_panel">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/events_section"
+                >
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/events_panel"
+            android:orientation="vertical"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#000"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:background="@drawable/forum_buttons"
+                    android:text="Add"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/add_event"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

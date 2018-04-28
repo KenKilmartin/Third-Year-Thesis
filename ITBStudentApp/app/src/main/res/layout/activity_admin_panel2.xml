@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sports_building"
+    tools:context="com.itbstudentapp.ProfileSettings">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tool_bar"
+        android:layout_margin="30sp"
+        android:background="@drawable/forum_background"
+        android:elevation="0dp">
+
+        <TextView
+
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:text="Admin Panel"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="28sp" />
+
+        <View
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10sp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom_panel"
+            android:layout_below="@id/bar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                >
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Moderator panel"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/cuprum"
+                    android:textAppearance="@style/cuprum_reg"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/admin_moderator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/forum_buttons"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:text="show"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                >
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quiz panel"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/cuprum"
+                    android:textAppearance="@style/cuprum_reg"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:id="@+id/admin_quiz_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/forum_buttons"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:text="show"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                >
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Reported posts"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/cuprum"
+                    android:textColor="#000"
+                    />
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/warning_red"
+                    android:layout_marginRight="10sp"
+                    android:id="@+id/report_warning"/>
+
+                <TextView
+                    android:id="@+id/admin_forum_reports"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/forum_buttons"
+                    android:fontFamily="@font/cuprumbold"
+                    android:text="show"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_panel"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/title"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/admin_home"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/forum_buttons"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:text="back to home"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

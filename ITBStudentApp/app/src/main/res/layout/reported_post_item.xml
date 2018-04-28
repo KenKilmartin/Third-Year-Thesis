@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_margin="5sp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40sp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Sample title"
+        android:fontFamily="@font/cuprumbold"
+        android:textAppearance="@style/cuprum_bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="5sp"
+        android:textColor="#000"
+        android:id="@+id/post_title"
+        />
+
+    <ImageView
+        android:layout_width="0sp"
+        android:layout_weight=".4"
+        android:layout_height="match_parent"
+        android:src="@drawable/delete_fp_black"
+        android:id="@+id/post_report_delete"
+        />
+
+</LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3sp"
+    android:background="#000000"
+    />
+
+
+</LinearLayout>

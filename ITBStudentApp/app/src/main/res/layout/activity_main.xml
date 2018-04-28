@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.MainActivity"
+    android:background="#0bb736">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tool_bar"
+        android:id="@+id/event_system"
+        android:background="#000000"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Event system test"
+            android:id="@+id/event_message"
+            android:linksClickable="true"
+            android:textAppearance="@style/cuprum_reg"
+            android:fontFamily="@font/cuprumregular"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:scrollbars="horizontal"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_below="@id/event_system"
+        android:background="@drawable/itb_above1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="3">
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b4540101"
+            android:orientation="vertical"
+            android:id="@+id/transport"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/transport_image"
+                android:src="@drawable/transport"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/transport_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transport"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b4605a00"
+            android:orientation="vertical"
+            android:id="@+id/timetable"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/timetable_image"
+                android:src="@drawable/timetable"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timetable_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timetable"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b4005c5c"
+            android:orientation="vertical"
+            android:id="@+id/quiz"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/quiz_image"
+                android:src="@drawable/quiz"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quiz_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quiz"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b448005e"
+            android:orientation="vertical"
+            android:id="@+id/map"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/map_image"
+                android:src="@drawable/map"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/map_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Map"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b448005e"
+            android:orientation="vertical"
+            android:id="@+id/forum"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/forum_image"
+                android:src="@drawable/forum"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forum_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forum"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b4704701"
+            android:orientation="vertical"
+            android:id="@+id/chat"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/chat_image"
+                android:src="@drawable/chat"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b4704701"
+            android:orientation="vertical"
+            android:id="@+id/links"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/links_image"
+                android:src="@drawable/links"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/links_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Links"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b4660169"
+            android:orientation="vertical"
+            android:id="@+id/phone"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/phone_image"
+                android:src="@drawable/phone"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15sp"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#b4011966"
+            android:orientation="vertical"
+            android:id="@+id/notes"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="85sp"
+                android:id="@+id/notes_image"
+                android:src="@drawable/note"
+                android:padding="10sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notes_image">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notes"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </GridLayout>
+</RelativeLayout>

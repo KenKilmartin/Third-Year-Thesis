@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.ProfileSettings"
+    android:background="@drawable/forum_background_img">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:layout_marginBottom="20sp"
+        android:id="@+id/profile_title">
+
+        <TextView
+            android:layout_margin="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_color="#33000000"
+        app:civ_border_width="4dp"
+        android:layout_below="@id/profile_title"
+        android:id="@+id/profile_image"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@drawable/user_outline"
+        android:layout_marginTop="1sp"
+        android:elevation="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <RelativeLayout
+        android:layout_margin="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_title"
+        android:background="@drawable/forum_background"
+        android:elevation="0dp"
+        >
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="50sp"
+           android:id="@+id/spacer"/>
+
+        <LinearLayout
+            android:layout_below="@id/spacer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Change profile image"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:background="@drawable/forum_buttons"
+                    android:text="Upload"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/profile_change_image"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Reset password"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:background="@drawable/forum_buttons"
+                    android:text="Reset"
+                    android:id="@+id/profile_reset_password"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Vibrate"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="18sp"
+                    />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:background="@drawable/forum_buttons"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/switch_vibrate"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Sound"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="18sp"
+                    />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:background="@drawable/forum_buttons"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/switch_sound"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="LED"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="18sp"
+                    />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:background="@drawable/forum_buttons"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/switch_led"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textSize="18sp"
+                    />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:background="@drawable/forum_buttons"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/switch_location"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="10sp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:background="@drawable/forum_buttons"
+                    android:text="Back to home"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/profile_back_home"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+{
+  "journey": [
+    {
+      "7.50": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "7.50"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "8.00"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "8.06"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "8.11"
+        }
+      ]
+    },
+    {
+      "8.25": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "8.25"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "8.35"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "8.41"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "8.46"
+        }
+      ]
+    },
+    {
+      "9.00": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "9.00"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "9.10"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "9.16"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "9.21"
+        }
+      ]
+    },
+    {
+      "9.35": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "9.35"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "9.45"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "9.51"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "9.56"
+        }
+      ]
+    },
+    {
+      "10.10": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "10.10"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "10.20"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "10.26"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "10.31"
+        }
+      ]
+    },
+    {
+      "11.30": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "11.30"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "11.40"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "11.46"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "11.51"
+        }
+      ]
+    },
+    {
+      "12.30": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "12.30"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "12.40"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "12.46"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "12.51"
+        }
+      ]
+    },
+    {
+      "13.30": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "13.30"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "13.40"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "13.46"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "13.51"
+        }
+      ]
+    },
+    {
+      "14.30": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "14.30"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "14.40"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "14.46"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "14.51"
+        }
+      ]
+    },
+    {
+      "15.30": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "15.30"
+        },
+        {
+          "stop": "Blanchardstown Shopping Centre",
+          "time": "15.40"
+        },
+        {
+          "stop": "National Aquatic Centre",
+          "time": "15.46"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "15.51"
+        }
+      ]
+    },
+    {
+      "16.30": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "16.30"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "16.35"
+        }
+      ]
+    },
+    {
+      "17.10":
+      [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "17.10"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "17.15"
+        }
+      ]
+    },
+    {
+      "17.45": [
+        {
+          "stop": "Coolmine Train Station",
+          "time": "17.45"
+        },
+        {
+          "stop": "ITB Campus",
+          "time": "17.50"
+        }
+      ]
+    }
+  ]
+}

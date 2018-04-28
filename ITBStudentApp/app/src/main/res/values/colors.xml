@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008906</color>
+    <color name="colorPrimaryDark">#005403</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bannerGreen">#1cba07</color>
+    <color name="registerButtonRed">#96201c</color>
+    <color name="forum_strokes">#a1a2a3</color>
+    <color name="message_user">#91bbff</color>
+    <color name="unread_message">#CCff8330</color>
+    <color name="read_message">#334286f4</color>
+    <color name="forum_banners">#cc00990a</color>
+
+    <string-array name="colours" translatable="false">
+        <item>d6d322</item>
+        <item>0011cc</item>
+        <item>ce371c</item>
+        <item>299308</item>
+        <item>91057c</item>
+        <item>069b71</item>
+        <item>8c010a</item>
+        <item>33b5e5</item>
+
+
+    </string-array>
+
+
+    <string-array name="letter_colours" translatable="false">
+        <item>#99cc00</item>
+        <item>#33b5e5</item>
+        <item>#0099cc</item>
+        <item>#547bca</item>
+        <item>#aa66cc</item>
+        <item>#9933cc</item>
+        <item>#669900</item>
+        <item>#aeb857</item>
+        <item>#cc0000</item>
+        <item>#df5948</item>
+        <item>#ff4444</item>
+        <item>#ae6b23</item>
+        <item>#ff8800</item>
+        <item>#e5ae4f</item>
+        <item>#ffbb33</item>
+        <item>#cccccc</item>
+        <item>#888888</item>
+    </string-array>
+</resources>

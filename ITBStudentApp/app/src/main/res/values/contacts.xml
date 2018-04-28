@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contacts">
+        <item>Security/tel:018851099</item>
+        <item>Nurse/tel:018851105</item>
+        <item>Counsellor/tel:018851105</item>
+        <item>SID/tel:018851592</item>
+        <item>Services/tel:018851014</item>
+        <item>Exams/tel:018851042</item>
+    </string-array>
+</resources>

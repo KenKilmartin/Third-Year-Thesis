@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="links">
+        <item>Evaluate Our App_https://www.surveymonkey.com/r/NVKZ5M9</item>
+        <item>Moodle_https://moodle.itb.ie</item>
+        <item>ITB Home_http://www.itb.ie</item>
+        <item>Email_https://outlook.office.com/owa/?realm=student.itb.ie</item>
+        <item>Password Reset_http://www.itb.ie/CurrentStudents/passwordrecovery.html</item>
+        <item>One Drive_https://studentitb-my.sharepoint.com</item>
+        <item>Exams_http://www.itb.ie/CurrentStudents/exams.html</item>
+        <item>Past Papers_http://itbstudenthub.ie/?p=62</item>
+        <item>Portal_https://portal.itb.ie</item>
+    </string-array>
+
+</resources>

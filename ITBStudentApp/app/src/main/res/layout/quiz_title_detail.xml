@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quiz_title_detail"
+    android:layout_width="match_parent"
+    android:layout_height="60sp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="#ccffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:fontFamily="@font/cuprumbold"
+        android:textAppearance="@style/cuprum_bold"
+        android:text="Quiz"
+        android:textAlignment="center"
+        android:textColor="#ccffffff"
+        android:textSize="35sp"
+        android:id="@+id/quiz_name"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="#ccffffff" />
+
+</LinearLayout>

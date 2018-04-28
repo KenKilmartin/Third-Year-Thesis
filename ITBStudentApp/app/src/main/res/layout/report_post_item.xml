@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5sp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/cuprumregular"
+            android:text="B00090936"
+            android:id="@+id/reported_post_user"
+            android:textAppearance="@style/cuprum_reg"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:layout_width="0sp"
+            android:id="@+id/reported_post_date"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_weight=".8"
+            android:fontFamily="@font/cuprumregular"
+            android:text="Date"
+            android:textAppearance="@style/cuprum_reg"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reported_post_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="@font/cuprumregular"
+            android:text="I am the users post tat has been reoprted"
+            android:textAppearance="@style/cuprum_reg"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/reported_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:src="@drawable/placeholder_image" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reported_post_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:gravity="right"
+            android:src="@drawable/delete_fp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5sp"
+        android:background="#000" />
+</LinearLayout>

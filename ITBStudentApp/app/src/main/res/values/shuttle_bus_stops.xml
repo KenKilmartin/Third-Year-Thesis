@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="coolmine_stop">
+        <item>53.3765025</item>
+        <item>-6.3934466</item>
+    </string-array>
+    <string-array name="blanchardstown">
+        <item>53.3947201</item>
+        <item>-6.3912828</item>
+    </string-array>
+    <string-array name="nac">
+        <item>53.3969792</item>
+        <item>-6.3723277</item>
+    </string-array>
+    <string-array name="itb">
+        <item>53.4035007</item>
+        <item>-6.3807762</item>
+    </string-array>
+</resources>

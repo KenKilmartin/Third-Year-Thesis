@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:layout_marginBottom="10sp"
+    android:background="@drawable/forum_panels"
+    android:backgroundTint="#cc0011cc"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:id="@+id/dest_text"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:gravity="center_vertical"
+            android:text="238 Damastown"
+            android:textColor="#fff"
+            android:textSize="20sp"
+        />
+
+        <TextView
+            android:layout_marginRight="10sp"
+            android:layout_width="0sp"
+            android:layout_weight="0.5"
+            android:layout_height="30sp"
+            android:id="@+id/bus_time_text"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:text="20 Mins"
+            android:textColor="#fff"
+            android:textSize="22sp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35sp">
+
+        <TextView
+        android:layout_marginRight="10sp"
+        android:layout_width="fill_parent"
+        android:layout_height="30sp"
+        android:id="@+id/bus_src"
+        android:layout_gravity="bottom"
+        android:gravity="right"
+        android:fontFamily="@font/cuprumbold"
+        android:textAppearance="@style/cuprum_bold"
+        android:text="via Blanchardstown"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_margin="10sp"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight=".5"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/dest_text"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:fontFamily="@font/cuprumbold"-->
+            <!--android:textAppearance="@style/cuprum_bold"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="238 Damastown"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="20sp"-->
+            <!--/>-->
+        <!---->
+        <!---->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:layout_margin="10sp"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight=".5"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/dest_text"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:fontFamily="@font/cuprumbold"-->
+        <!--android:textAppearance="@style/cuprum_bold"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="238 Damastown"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="20sp"-->
+        <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight=".6"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:layout_marginRight="10sp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30sp"-->
+            <!--android:id="@+id/bus_time_text"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:gravity="right"-->
+            <!--android:fontFamily="@font/cuprumbold"-->
+            <!--android:textAppearance="@style/cuprum_bold"-->
+            <!--android:text="20 Mins"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="22sp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_marginRight="10sp"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="30sp"-->
+            <!--android:id="@+id/bus_src"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:gravity="right"-->
+            <!--android:fontFamily="@font/cuprumbold"-->
+            <!--android:textAppearance="@style/cuprum_bold"-->
+            <!--android:text="via Blanchardstown"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="15sp"-->
+            <!--/>-->
+
+
+
+    <!--</LinearLayout>-->
+<!--</LinearLayout>-->

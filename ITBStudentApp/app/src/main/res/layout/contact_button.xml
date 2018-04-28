@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:layout_marginBottom="10sp"
+    android:background="@drawable/forum_panels"
+    android:backgroundTint="#cc0011cc"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:padding="20sp"
+        android:id="@+id/contact_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/cuprumbold"
+        android:textAppearance="@style/cuprum_bold"
+        android:gravity="center_vertical"
+        android:text="Modules"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="28sp" />
+
+
+</LinearLayout>
+

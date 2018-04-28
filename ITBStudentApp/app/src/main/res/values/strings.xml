@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">ITB App</string>
+    <string name="title_activity_forum">Forum</string>
+    <string name="title_activity_timetable">Timetable</string>
+    <string name="title_activity_quiz">Quiz</string>
+    <string name="title_activity_transport">Transport</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_phone">Phone Numbers</string>
+    <string name="title_activity_links">Quick Links</string>
+
+
+    <string name="course_prompt">Choose a Course</string>
+
+    <string-array name="courses">
+        <item>BN104</item>
+        <item>BN103</item>
+        <item>BN002</item>
+    </string-array>
+
+    <string-array name="dublin_bus_stops">
+        <item>2468</item>
+        <item>1820</item>
+        <item>1825</item>
+        <item>1819</item>
+        <item>2960</item>
+        <item>7025</item>
+        <item>7026</item>
+        <item>4747</item>
+    </string-array>
+
+    <string-array name="WeekDays">
+        <item> Monday </item>
+        <item> Tuesday </item>
+        <item> Wednesday </item>
+        <item> Thursday </item>
+        <item> Friday </item>
+        <item> Saturday </item>
+        <item> Sunday </item>
+    </string-array>
+
+    <string-array name="Classes">
+        <item> Course 1 </item>
+        <item> Course 2 </item>
+        <item> Course 3 </item>
+        <item> Course 4 </item>
+    </string-array>
+
+    <string-array name="permitted_emails">
+        <item>student.itb.ie</item>
+        <item>itb.ie</item>
+        <item>nln.ie</item>
+        <item>admin.itbapp.ie</item> <!--NOT REAL EMAIL-->
+    </string-array>
+
+    <string-array name="main_menu">
+        <item>forum_modules</item>
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

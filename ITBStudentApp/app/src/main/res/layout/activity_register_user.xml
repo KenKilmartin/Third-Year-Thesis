@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.LoginScreen">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/itb_home_screen"
+        android:id="@+id/reg_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cuprum"
+            android:textAppearance="@style/cuprum_reg"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:id="@+id/instruction_panel"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requirements for field"
+                android:textSize="20sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:id="@+id/instructions"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/register_user_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/login_drawable"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:hint="Full Name"
+                android:maxLines="1"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/register_user_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/email_icon"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:hint="College Email Address"
+                android:maxLines="1"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/register_user_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:hint="Password"
+                android:maxLines="1"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="18sp"
+                android:inputType="textPassword"/>
+
+
+            <EditText
+                android:id="@+id/register_user_repeat"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:hint="Repeat Password"
+                android:maxLines="1"
+                android:textColor="#ffff"
+                android:textColorHint="#fff"
+                android:textSize="18sp"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+
+            <Button
+                android:id="@+id/register_submit_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/login_screen_button"
+                android:backgroundTint="@color/bannerGreen"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/register_clear_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/login_screen_button"
+                android:backgroundTint="@color/registerButtonRed"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:text="Clear"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

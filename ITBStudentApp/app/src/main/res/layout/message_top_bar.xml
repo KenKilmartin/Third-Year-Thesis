@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="B00090913"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/cuprum_reg"
+        android:fontFamily="@font/cuprumregular"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        android:id="@+id/message_top_bar"
+        />
+
+</android.support.constraint.ConstraintLayout>

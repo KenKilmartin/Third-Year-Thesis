@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.itbstudentapp.Timetable"
+    android:background="@drawable/itb_snow1">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar"
+        >
+    </include>
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/tool_bar"
+        android:padding="10sp"
+        android:id="@+id/timetableHomeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:fontFamily="@font/cuprumbold"
+        android:textAppearance="@style/cuprum_bold"
+        android:text="Home"
+        android:textColor="#fff"
+        android:background="@drawable/forum_buttons"
+        android:backgroundTint="#8b003101"
+        android:textSize="25sp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/timetable"
+        android:layout_margin="10dp"
+        android:dividerHeight="10dp"
+        android:divider="@null"
+        android:layout_below="@+id/timetableHomeBtn">
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.itbstudentapp.Timetable"
+    android:background="@drawable/itb_snow1">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar">
+    </include>
+
+    <TextView
+        android:layout_below="@id/tool_bar"
+        android:id="@id/dayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textAlignment="center"
+        android:fontFamily="@font/cuprumbold"
+        android:textAppearance="@style/cuprum_bold"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/addNewClass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5sp"
+        android:layout_marginBottom="10sp"
+        android:background="@drawable/forum_panels"
+        android:backgroundTint="#cc299308"
+        android:orientation="vertical"
+        android:layout_below="@+id/dayName">
+
+
+        <TextView
+            android:padding="10sp"
+            android:id="@+id/addNewClassText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:gravity="center_vertical"
+            android:text="Add"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            />
+
+    </LinearLayout>
+    <GridLayout
+        android:columnCount="2"
+        android:id="@+id/timetableGridBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="10sp"
+
+        android:layout_below="@+id/addNewClass">
+
+        <TextView
+            android:padding="10sp"
+            android:layout_columnWeight="1"
+            android:id="@+id/homeBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#fff"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#cc0011cc"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:padding="10sp"
+            android:layout_columnWeight="1"
+            android:id="@+id/backBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="#fff"
+            android:background="@drawable/forum_panels"
+            android:backgroundTint="#ccce371c"
+            android:textSize="16sp"
+            />
+
+    </GridLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listCourseByDay"
+        android:layout_margin="10dp"
+        android:dividerHeight="10dp"
+        android:layout_below="@+id/timetableGridBtn"
+        android:divider="@null">
+
+    </ListView>
+
+</RelativeLayout>

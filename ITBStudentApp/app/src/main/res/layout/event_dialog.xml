@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#cc000000">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:gravity="center_vertical"
+            android:text="Add event"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="fill_parent"
+            android:background="#33000000"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/event_title"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="10sp"
+                android:backgroundTint="#000"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:hint="Enter event title"
+                android:paddingLeft="10sp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/event_valid_till"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="10sp"
+                android:backgroundTint="#000"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:inputType="datetime"
+                android:paddingLeft="10sp"
+                android:text="Enter date valid till"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="28sp" />
+
+            <CalendarView
+                android:id="@+id/calender_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+            <EditText
+                android:id="@+id/event_description"
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:layout_margin="10sp"
+                android:backgroundTint="#000"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:hint="Enter event description"
+                android:inputType="textMultiLine"
+                android:paddingLeft="10sp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/event_image_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="10sp"
+                android:backgroundTint="#000"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:paddingLeft="10sp"
+                android:text="No image uploaded"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/event_upload_image"
+                    android:layout_width="0dp"
+                    android:layout_height="40sp"
+                    android:layout_margin="20sp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/forum_buttons"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:gravity="center_vertical"
+                    android:text="Upload image"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/event_add"
+                    android:layout_width="0dp"
+                    android:layout_height="40sp"
+                    android:layout_margin="20sp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/forum_buttons"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:gravity="center_vertical"
+                    android:text="Submit"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

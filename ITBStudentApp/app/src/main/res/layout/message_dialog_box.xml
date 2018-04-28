@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="230sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_dialog_box"
+            android:backgroundTint="#CC000000"
+            android:layout_alignParentRight="false"
+            android:id="@+id/chat_message_dialog_box"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/cuprum"
+                android:textAppearance="@style/cuprum_reg"
+                android:text="Messager one"
+                android:textColor="#fff"
+                android:id="@+id/chat_message_user_name"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/cuprum"
+                android:textAppearance="@style/cuprum_reg"
+                android:text="21:00 18 april 2018"
+                android:id="@+id/chat_message_date"
+                android:layout_below="@id/chat_message_user_name"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/cuprum"
+                android:textAppearance="@style/cuprum_reg"
+                android:text="i am the users message a message that is used to test the message size"
+                android:id="@+id/chat_message_user_message"
+                android:layout_below="@id/chat_message_date"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:id="@+id/chat_message_image"
+                android:layout_below="@id/chat_message_user_message"
+                />
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.Phone"
+    android:background="@drawable/transport_stop">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_below="@id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:orientation="vertical"
+            android:id="@+id/transport_banner">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Transport"
+                android:textSize="30sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                />
+
+
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_below="@id/transport_banner">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20sp"
+                android:background="@drawable/forum_panels"
+                android:backgroundTint="#cc600057"
+                android:orientation="vertical"
+                android:id="@+id/dub_bus"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dublin Bus"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textColor="#ffff"
+                    />
+
+                <ImageView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dublin_bus"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20sp"
+                android:background="@drawable/forum_panels"
+                android:backgroundTint="#cc48005e"
+                android:orientation="vertical"
+                android:id="@+id/iar_eir"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Iarnoid Eireann"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textColor="#ffff"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/irish_rail"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20sp"
+                android:background="@drawable/forum_panels"
+                android:backgroundTint="#cc540101"
+                android:orientation="vertical"
+                android:id="@+id/itb_shuttle"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shuttle Bus"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textColor="#ffff"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/itb_shut"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20sp"
+                android:background="@drawable/forum_panels"
+                android:backgroundTint="#cc605a00"
+                android:orientation="vertical"
+                android:id="@+id/bus_eir"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bus Eireann"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textColor="#ffff"
+                    />
+
+                <ImageView
+                    android:layout_margin="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bus_eir"
+                    />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

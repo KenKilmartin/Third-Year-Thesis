@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forum_background_img"
+    tools:context="com.itbstudentapp.MapActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_below="@id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/map_title"
+        android:layout_margin="5sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:textAlignment="center"
+            />
+
+        <ImageView
+            android:layout_width="0sp"
+            android:layout_weight=".2"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus_white"
+            android:id="@+id/add_room"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/map_title"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/map_section"
+        >
+        <include layout="@layout/fragment_map"></include>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/map_section"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/map_chooser"
+        >
+
+        <TextView
+            android:layout_marginTop="2sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick your search location"
+            android:textAlignment="center"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            />
+
+        <LinearLayout
+            android:layout_margin="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_margin="0sp"
+                android:id="@+id/room_drop_down"
+                >
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Find room"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:background="@drawable/forum_buttons"
+                android:id="@+id/map_submit"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

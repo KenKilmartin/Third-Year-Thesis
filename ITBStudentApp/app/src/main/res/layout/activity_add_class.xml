@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/itb_above1"
+    android:orientation="vertical"
+    tools:context="com.itbstudentapp.AddClass">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/cuprumbold"
+                android:text="Class or Event"
+                android:textAlignment="center"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/addClassOrEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cuprumbold"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cuprumbold"
+                android:text="Start Time"
+                android:textAlignment="center"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/addTimetableStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cuprumbold"
+                android:hint="eg 9:30/13:00"
+                android:inputType="time"
+                android:maxLength="5"
+                android:textAlignment="center"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cuprumbold"
+                android:text="End Time"
+                android:textAlignment="center"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/addTimetableEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cuprumbold"
+                android:hint="eg 11:30/15:00"
+                android:inputType="time"
+                android:maxLength="5"
+                android:textAlignment="center"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cuprumbold"
+                android:text="Room"
+                android:textAlignment="center"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/addTimetableRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cuprumbold"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classOrEvent"
+                android:layout_centerHorizontal="true"
+                android:weightSum="100">
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/classOrEvent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10sp"
+                android:columnCount="2"
+                android:weightSum="100">
+
+                <Button
+                    android:id="@+id/btnSaveTimetableEntry"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc299308"
+                    android:fontFamily="@font/cuprumbold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="SAVE"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnBckTimetableEntry"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc8c010a"
+                    android:fontFamily="@font/cuprumbold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Back"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </GridLayout>
+
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

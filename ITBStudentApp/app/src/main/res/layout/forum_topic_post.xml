@@ -1,0 +1,185 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/forum_panels"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6sp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:src="@drawable/user_outline"
+            android:id="@+id/forum_post_user_image"
+            app:civ_border_width="2sp"
+            app:civ_border_color="@color/common_google_signin_btn_text_light"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User name"
+                android:layout_marginLeft="10sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:id="@+id/forum_poster_name"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18:00 9 April 2018"
+                android:layout_marginLeft="10sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:id="@+id/forum_post_date"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+            android:fontFamily="@font/cuprum"
+            android:textAppearance="@style/cuprum_reg"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_margin="6sp"
+            android:id="@+id/forum_post"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0sp"
+                android:layout_weight="4"
+                android:src="@drawable/placeholder_image"
+                android:id="@+id/forum_post_image"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1sp">
+
+        <TextView
+            android:layout_margin="10sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/forum_reply_button"
+            android:text="New Post"
+            android:textColor="#fff"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:background="@drawable/forum_buttons"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_marginRight="5sp"
+            android:layout_height="match_parent"
+            android:text="7 Posts"
+            android:id="@+id/forum_number_of_posts"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_margin="5sp"
+        >
+
+        <View
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+       <LinearLayout
+           android:layout_width="0sp"
+           android:layout_weight=".7"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:layout_width="0sp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:src="@drawable/delete_fp"
+               android:id="@+id/forum_post_delete"
+               android:visibility="invisible"/>
+
+           <ImageView
+               android:layout_width="0sp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:src="@drawable/report_fp"
+               android:id="@+id/forum_post_report"
+              />
+
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

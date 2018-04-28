@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.ItbShuttleBus.ItbShuttleMenu"
+    android:background="@drawable/transport_stop">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_below="@id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:orientation="vertical"
+            android:id="@+id/_banner">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="ITB Shuttle Bus"
+                android:textSize="30sp"
+                android:fontFamily="@font/cuprumbold"
+                android:textAppearance="@style/cuprum_bold"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@id/_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Pick your starting point"
+            android:textSize="25sp"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:id="@+id/user_choice"
+            android:layout_marginBottom="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/user_choice"
+            android:orientation="vertical"
+            >
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="2"
+                android:columnCount="2"
+                android:id="@+id/forum_menu_grid"
+                android:layout_marginBottom="10sp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc0011cc"
+                    android:orientation="vertical"
+                    android:id="@+id/itb_campus"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="ITB Campus"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/cuprumbold"
+                        android:textAppearance="@style/cuprum_bold"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc605a00"
+                    android:orientation="vertical"
+                    android:id="@+id/nac"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="National Aquatic Centre"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/cuprumbold"
+                        android:textAppearance="@style/cuprum_bold"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc006b14"
+                    android:orientation="vertical"
+                    android:id="@+id/shopping_centre"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Blanchardstown Shopping Centre"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/cuprumbold"
+                        android:textAppearance="@style/cuprum_bold"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/forum_panels"
+                    android:backgroundTint="#cc660169"
+                    android:orientation="vertical"
+                    android:id="@+id/cmine"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Coolmine Train Station"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/cuprumbold"
+                        android:textAppearance="@style/cuprum_bold"
+                        android:textColor="#ffffff"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </GridLayout>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

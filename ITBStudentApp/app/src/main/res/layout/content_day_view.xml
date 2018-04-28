@@ -1,0 +1,61 @@
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:elevation="4dp"
+    android:background="@drawable/forum_panels"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.itbstudentapp.utils.LetterImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/letterCircle"
+            android:layout_margin="8dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/cuprum_bold"
+            android:fontFamily="@font/cuprumbold"
+            android:textColor="#fff"
+            android:id="@+id/classTitle"
+            android:text="Class"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/letterCircle"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/cuprum_bold"
+            android:fontFamily="@font/cuprumbold"
+            android:textColor="#fff"
+            android:id="@+id/classTime"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/letterCircle"
+            android:text="Time"
+            android:layout_below="@+id/classTitle"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/cuprum_bold"
+            android:fontFamily="@font/cuprumbold"
+            android:textColor="#fff"
+            android:id="@+id/classRoom"
+            android:textSize="18dp"
+            android:text="Class Room"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/letterCircle"
+            android:layout_below="@+id/classTime"/>
+    </RelativeLayout>
+
+</LinearLayout>

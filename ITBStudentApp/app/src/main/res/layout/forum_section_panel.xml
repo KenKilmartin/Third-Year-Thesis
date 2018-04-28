@@ -1,0 +1,30 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="0dp"
+android:layout_height="0dp"
+android:layout_rowWeight="1"
+android:layout_columnWeight="1"
+android:layout_margin="5sp"
+android:background="@drawable/forum_panels"
+android:backgroundTint="#cc600057"
+android:orientation="vertical"
+android:id="@+id/forum_relax"
+    >
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Relax"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="20sp"
+    android:textAlignment="center"
+    android:textSize="22sp"
+    android:fontFamily="@font/cuprumbold"
+    android:textAppearance="@style/cuprum_bold"
+    android:textColor="#ffff"
+    android:id="@+id/section_text_box"
+    />
+
+
+</LinearLayout>

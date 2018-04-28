@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbstudentapp.ProfileSettings"
+    android:background="@drawable/forum_background_img">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:layout_marginBottom="10sp"
+        android:id="@+id/profile_title">
+
+        <TextView
+            android:layout_margin="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject List"
+            android:fontFamily="@font/cuprumbold"
+            android:textAppearance="@style/cuprum_bold"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_margin="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_title"
+        android:background="@drawable/forum_background"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/home_button_panel">
+
+            <LinearLayout
+                android:layout_marginTop="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/quiz_subjects">
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/home_button_panel"
+                android:layout_alignParentBottom="true"
+                android:padding="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/cuprumbold"
+                    android:textAppearance="@style/cuprum_bold"
+                    android:background="@drawable/forum_buttons"
+                    android:text="Back to home"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/profile_back_home"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"/>
+
+
+
+            </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
