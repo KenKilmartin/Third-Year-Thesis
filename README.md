@@ -11,4 +11,4 @@ The GitHub Pages Can be Viewed : https://kenkilmartin.github.io/Third-Year-Thesi
 
 This application is supported from devices that are from api 23 – present.
 To install the app, navigate to where ever you put in on your device. Once you tap the apk file. It should start the install.
-If your device is not set to allow 3rd party apps, you will be asked to set this at the time. A screen similar to this should be shown. It may vary from device to device. (Screenshots are from a Samsung galaxy S6).
+If your device is not set to allow 3rd party apps, you will be asked to set this at the time. A screen similar to this should be shown.
